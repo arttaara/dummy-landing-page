@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Open Sauce Sans';
+    src: url('./assets/fonts/opensauce/woff/OpenSauceSansVF.woff') format('woff');
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Open Sauce Sans';
+    background-image: url(./assets/images/artTaaraLandingPageBG.png);
+    background-size: 100% auto;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+    color: #000;
+}
+
+.tagline {
+    font-weight: 700;
+}
+
+.coming-soon {
+    font-size: 1.1em;
+    color: #000;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+.contact-info {
+    margin-top: 2.5em;
+}
+
+.contact-info a {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 12px 25px;
+    border: 1px solid #000;
+    border-radius: 25px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-info a:hover {
+    background-color: #ae572f;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .contact-info a {
+        display: block;
+        margin: 10px auto;
+    }
+}
