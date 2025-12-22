@@ -7,16 +7,10 @@
 
 body {
     font-family: 'Open Sauce Sans';
-    background-image: url(./assets/images/artTaaraLandingPageBG.png);
-    background-size: 100% auto;
-    color: #000;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
+    background-color: #ae572f;
+    color: #e5dad0;
+    display: grid;
+    grid-template-rows:auto 1fr auto;
 }
 
 .logo {
@@ -24,15 +18,28 @@ body {
     padding: 0;
 }
 
-.container {
-    max-width: 600px;
-    padding: 20px;
+main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer {
+    background-color: #e5dad0;
+    color: #ae572f;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     font-size: 3em;
     margin-bottom: 0.2em;
-    color: #000;
+    color: #e5dad0;
 }
 
 .tagline {
@@ -41,7 +48,7 @@ h1 {
 
 .coming-soon {
     font-size: 1.1em;
-    color: #000;
+    color: #e5dad0;
 }
 
 p {
@@ -56,17 +63,17 @@ p {
     display: inline-block;
     margin: 10px 15px;
     padding: 12px 25px;
-    border: 1px solid #000;
+    border: 1px solid #e5dad0;
     border-radius: 25px;
-    color: #000;
+    color: #e5dad0;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .contact-info a:hover {
-    background-color: #ae572f;
-    color: #fff;
+    background-color: #e5dad0;
+    color: #ae572f;
 }
 
 @media (max-width: 600px) {
