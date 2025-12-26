@@ -7,40 +7,120 @@
 
 body {
     font-family: 'Rotation';
-    background-color: #ae572f;
-    /*background-image: url("./assets/images/artTaaraLandingPageBG.png");*/
-    background-size: 75%;
+    /*background-color: #ae572f;*/
+    background-image: url("./assets/images/dark_bgg.png");
+    background-size: 100%;
     color: #e5dad0;
     margin: 0;
+}
+
+.nav {
+    margin: 0;
+    padding: 0px 30px;
+    background-color: #a9b9af;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-links {
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-links a{
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    color: #3f2417;
 }
 
 main {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row-reverse;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
 }
 
-.container {
-    background-color: #e5dad0;
-    padding: 30px;
+.small-logo {
+    width: 35px;
+}
+
+.content {
+    padding: 0;
     margin: 0;
-    color: #ae572f;
-    border-radius: 10px;
+    color: #e5dad0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
+}
+
+.content-services {
+    min-width: 1200px;
+    padding: 0;
+    margin: 0;
+    color: #e5dad0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service {
+    padding: 0;
+    margin: 0;
+    color: #e5dad0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.services {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+    margin-top: 1.5em;
 }
 
 .logo {
-    width: 120px;
+    width: 500px;
     padding: 0;
+    margin: 0;
+    margin-right: 200px;
+}
+
+.full-logo {
+    width: 500px;
+    padding: 0;
+}
+
+.our-services {
+    width: 500px;
+    padding: 0;
+    margin: 0;
+    margin-right: 200px;
 }
 
 h1 {
@@ -50,10 +130,11 @@ h1 {
 }
 
 .tagline {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 600;
     margin: 0;
-    margin-top: 1em;
+    margin-top: 1.5em;
+    color: #a9b9af;
 }
 
 .hook {
@@ -63,9 +144,25 @@ h1 {
     max-width: 50%;
 }
 
-.coming-soon {
-    font-size: 1.1em;
+.keywords {
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 0;
     margin: 0;
+    margin-top: 1.5em;
+}
+
+.desc {
+    font-size: 1.2em;
+    margin: 0;
+    margin-top: 1.5em;
+    max-width: 70%;
+}
+
+.coming-soon {
+    font-size: 1.2em;
+    margin: 0;
+    margin-top: 1.5em;
 }
 
 p {
@@ -74,23 +171,24 @@ p {
 
 .contact-info {
     margin: 0;
+    margin-top: 1.5em;
 }
 
 .contact-info a {
     display: inline-block;
     margin: 10px 15px;
     padding: 12px 25px;
-    border: 1px solid #ae572f;
+    border: 1px solid #e5dad0;
     border-radius: 25px;
-    color: #ae572f;
+    color: #e5dad0;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .contact-info a:hover {
-    background-color: #ae572f;
-    color: #e5dad0;
+    background-color: #a9b9af;
+    color: #ae572f;
 }
 
 .footer {
@@ -98,10 +196,11 @@ p {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #e5dad0;
-  color: #ae572f;
+  background-color: #a9b9af;
+  color: #3f2417;
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 0.75em;
+  font-weight: 600;
 }
 
 @media (max-width: 600px) {
@@ -109,9 +208,48 @@ p {
         display: block;
         margin: 10px auto;
     }
+
+    body {
+        background-size: 375%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .desc {
+        display: none;
+    }
+
+    .logo {
+        width: 200px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .full-logo {
+        width: 300px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer {
+        position: relative;
+        padding: 20px 16px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 0.7em;
+        font-weight: 600;
+        background-color: #a9b9af;
+        color: #e5dad0;
+    }
 }
-
-
 
 /* Spacing + layout polish */
 main {
@@ -131,7 +269,7 @@ main {
 }
 
 /* Subtle fade-in animation */
-.logo, .container, h1, .tagline, .hook, .micro {
+.logo, .full-logo, .container, h1, .tagline, .hook, .micro, .desc, .keywords, ul, .our-services {
     opacity: 0;
     animation: fadeIn 1.2s ease forwards;
 }
@@ -141,14 +279,9 @@ main {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Footer spacing improvement on mobile */
-.footer {
-    padding: 8px 0;
-}
-
 /* Improve readability of the beige box on mobile */
 .container {
-    max-width: 500px;
+    max-width: 800px;
 }
 
 .micro {
