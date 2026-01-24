@@ -3,50 +3,108 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Art Taara</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Taara | Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav>
-        <div class="nav-inner">
-            <div class="nav-logo">
-                <img class="nav-logo" src="./assets/images/arttaara logo.svg" alt="small logo navbar">
-            </div>
-            <div class="nav-links">
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="artists.html">Artists</a>
-                <a href="blog.html">Journal</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-    </nav>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/art_taara_lander.svg" alt="Art Taara Logo">
+            </a>
 
-    <section class="hero container">
-        <div>
-            <h1 class="hero-title">Rooted in India,<br>Resonating Worldwide.</h1>
-            <p>
-                Premium Art Marketplace · Curated Collections · Commissioned Art · Bespoke Framing ·
-                Style Guidance
-            </p>
-            <p class="hero-sub">
-                Art Taara brings together India's heritage and contemporary art through thoughtful curation
-                and artist-first partnerships. We help collectors, designers, and spaces discover meaningful artworks
-                that carry depth, culture, and quiet beauty.
-            </p>
-            <p>
-                <a href="artists.html" target="_blank" rel="noopener noreferrer">Browse Our Artists</a>
-            </p>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav>
+                <ul id="nav-ul">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="artists.html">Artists</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
-        <div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-layout">
+
+            <div class="hero-text">
+                <h1>Rooted in India,<br>Resonating Worldwide.</h1>
+                <p class="hero-subtitle">Premium Art Marketplace · Curated Collections · Commissioned Art</p>
+                <p class="hero-description">
+                    Art Taara brings together India's heritage and contemporary art through thoughtful curation and
+                    artist-first partnerships. Discover meaningful artworks that carry depth, culture, and quiet beauty.
+                </p>
+                <a href="artists.html" class="btn-primary">Browse Our Artists</a>
+            </div>
+
+            <div class="hero-image-container">
+                <div class="slider-wrapper">
+                    <img src="assets/lander-images/2.png" alt="Artwork 1" class="slide">
+                    <img src="assets/lander-images/3.png" alt="Artwork 2" class="slide">
+                    <img src="assets/lander-images/4.png" alt="Artwork 3" class="slide">
+                    <img src="assets/lander-images/5.png" alt="Artwork 3" class="slide">
+                    <img src="assets/lander-images/6.png" alt="Artwork 3" class="slide">
+                    <img src="assets/lander-images/7.png" alt="Artwork 3" class="slide">
+                    <img src="assets/lander-images/8.png" alt="Artwork 3" class="slide">
+                    <img src="assets/lander-images/9.png" alt="Artwork 3" class="slide">
+                </div>
+            </div>
+
         </div>
     </section>
 
     <footer>
-        Based in Delhi NCR and Chandigarh, India • Shipping worldwide | © Art Taara 2025 — All rights reserved.
+        <div class="container footer-layout">
+
+            <div class="footer-col">
+                <h3>Art Taara</h3>
+                <p>Bringing together India's heritage and contemporary art through thoughtful curation.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="artists.html">Our Artists</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <p>Instagram: <a href="https://www.instagram.com/arttaara/">@arttaara</a></p>
+                <p>Email: <a href="mailto:art.taara27@gmail.com">art.taara27@gmail.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="copyright-bar">
+            <p>Based in Delhi NCR and Chandigarh, India • Shipping worldwide | &copy; Art Taara 2025 — All rights
+                reserved.</p>
+        </div>
     </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navUL = document.getElementById('nav-ul');
+
+        hamburger.addEventListener('click', () => {
+            navUL.classList.toggle('show');
+        });
+    </script>
 
 </body>
 

@@ -3,54 +3,113 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>About — Art Taara</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Taara | About Us</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav>
-        <div class="nav-inner">
-            <div class="nav-logo">
-                <img class="nav-logo" src="./assets/images/arttaara logo.svg" alt="small logo navbar">
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/art_taara_lander.svg" alt="Art Taara Logo">
+            </a>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="artists.html">Artists</a>
-                <a href="blog.html">Journal</a>
-                <a href="contact.html">Contact</a>
-            </div>
+
+            <nav>
+                <ul id="nav-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="artists.html">Artists</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <section class="hero container">
-        <div>
-            <h1>About Art Taara</h1>
+    <section class="page-content">
+        <div class="container">
 
-            <p>
-                Art Taara is an artist-led curatorial platform focused on Indian art
-                practices — both traditional and contemporary.
-            </p>
+            <div class="about-intro">
+                <h1>Bridging Heritage & Modernity</h1>
+                <p class="lead-text">
+                    Art Taara is more than a marketplace; it is a dialogue between the rich legacy of Indian art and the
+                    contemporary collector.
+                </p>
+            </div>
 
-            <p>
-                We work closely with artists to present their work in ways that are
-                respectful, contextual, and sustainable. Each project begins with
-                conversation: about the artist’s practice, the client’s space, and the
-                role art is meant to play.
-            </p>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://placehold.co/600x800/EAE7DC/3E2B26?text=Our+Studio" alt="Art Taara Studio">
+                </div>
 
-            <p>
-                Rather than operating at scale, we choose to work slowly and deliberately,
-                building long-term relationships with artists, collectors, designers,
-                and institutions.
-            </p>
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in Delhi NCR and Chandigarh, Art Taara was born from a simple observation: Indian art is
+                        vast, beautiful, and often inaccessible to the modern homeowner.</p>
+                    <p>We work directly with emerging and established artists to curate collections that are not just
+                        decorative, but soulful. Whether it is a vibrant Gouache on paper or a serene oil canvas, every
+                        piece tells a story of culture, craftsmanship, and quiet beauty.</p>
+
+                    <div class="signature-block">
+                        <p>Warmly,</p>
+                        <p><strong>The Art Taara Team</strong></p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <footer>
-        © Art Taara
+        <div class="container footer-layout">
+
+            <div class="footer-col">
+                <h3>Art Taara</h3>
+                <p>Bringing together India's heritage and contemporary art through thoughtful curation.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="artists.html">Our Artists</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <p>Instagram: <a href="https://www.instagram.com/arttaara/">@arttaara</a></p>
+                <p>Email: <a href="mailto:art.taara27@gmail.com">art.taara27@gmail.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="copyright-bar">
+            <p>Based in Delhi NCR and Chandigarh, India • Shipping worldwide | &copy; Art Taara 2025 — All rights
+                reserved.</p>
+        </div>
     </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navUL = document.getElementById('nav-ul');
+
+        hamburger.addEventListener('click', () => {
+            navUL.classList.toggle('show');
+        });
+    </script>
 
 </body>
 

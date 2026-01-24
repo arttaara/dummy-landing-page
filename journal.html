@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Taara | Journal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/art_taara_lander.svg" alt="Art Taara Logo">
+            </a>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav>
+                <ul id="nav-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="artists.html">Artists</a></li>
+                    <li><a href="journal.html" class="active">Journal</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-content">
+        <div class="container">
+
+            <div class="journal-header">
+                <h1>The Journal</h1>
+                <p>Insights on collecting, artist stories, and the world of Indian art.</p>
+            </div>
+
+            <article class="featured-post">
+                <div class="featured-image">
+                    <img src="https://placehold.co/1200x600/ABC0B8/3E2B26?text=Featured+Article" alt="Article Image">
+                </div>
+                <div class="featured-content">
+                    <span class="post-category">Collecting Guide</span>
+                    <h2>How to Start Your Art Collection on a Budget</h2>
+                    <p>Building a meaningful collection doesn't require a fortune. It requires an eye for detail,
+                        patience, and a willingness to explore emerging talent.</p>
+                    <a href="#" class="read-more">Read Full Story &rarr;</a>
+                </div>
+            </article>
+
+            <div class="journal-grid">
+
+                <article class="journal-post">
+                    <div class="post-image">
+                        <img src="https://placehold.co/600x400/EAE7DC/3E2B26?text=Post+1" alt="Article Image">
+                    </div>
+                    <div class="post-content">
+                        <span class="post-category">Artist Spotlight</span>
+                        <h3>The Quiet Beauty of Gouache</h3>
+                        <p>Exploring the resurgence of traditional mediums in contemporary Indian art.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="journal-post">
+                    <div class="post-image">
+                        <img src="https://placehold.co/600x400/D8C3A5/3E2B26?text=Post+2" alt="Article Image">
+                    </div>
+                    <div class="post-content">
+                        <span class="post-category">Interior Design</span>
+                        <h3>Art in the Modern Home</h3>
+                        <p>Tips from top architects on integrating statement pieces into minimal spaces.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="journal-post">
+                    <div class="post-image">
+                        <img src="https://placehold.co/600x400/ABC0B8/3E2B26?text=Post+3" alt="Article Image">
+                    </div>
+                    <div class="post-content">
+                        <span class="post-category">Market Trends</span>
+                        <h3>Investing in Indian Art: 2025 Outlook</h3>
+                        <p>Why regional art centers like Chandigarh are becoming the new hubs for creativity.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-layout">
+
+            <div class="footer-col">
+                <h3>Art Taara</h3>
+                <p>Bringing together India's heritage and contemporary art through thoughtful curation.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="artists.html">Our Artists</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <p>Instagram: <a href="https://www.instagram.com/arttaara/">@arttaara</a></p>
+                <p>Email: <a href="mailto:art.taara27@gmail.com">art.taara27@gmail.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="copyright-bar">
+            <p>Based in Delhi NCR and Chandigarh, India • Shipping worldwide | &copy; Art Taara 2025 — All rights
+                reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navUL = document.getElementById('nav-ul');
+
+        hamburger.addEventListener('click', () => {
+            navUL.classList.toggle('show');
+        });
+    </script>
+
+</body>
+
+</html>

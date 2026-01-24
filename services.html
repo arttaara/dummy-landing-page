@@ -3,49 +3,123 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Services — Art Taara</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Taara | Services</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav>
-        <div class="nav-inner">
-            <div class="nav-logo">
-                <img class="nav-logo" src="./assets/images/arttaara logo.svg" alt="small logo navbar">
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/art_taara_lander.svg" alt="Art Taara Logo">
+            </a>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="artists.html">Artists</a>
-                <a href="blog.html">Journal</a>
-                <a href="contact.html">Contact</a>
-            </div>
+
+            <nav>
+                <ul id="nav-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="artists.html">Artists</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <section class="hero container">
-        <div>
-            <h1>Services</h1>
+    <section class="page-content">
+        <div class="container">
 
-            <p>
-                Our services are collaborative and project-led, shaped around context
-                rather than fixed packages.
-            </p>
+            <div class="services-intro">
+                <h1>Services</h1>
+                <p class="lead-text">
+                    Our services are collaborative and project-led, shaped around context rather than fixed packages.
+                </p>
+            </div>
 
-            <ul class="simple-list">
-                <li><strong>Art Curation</strong> — Curated selections for private and commercial spaces.</li>
-                <li><strong>Art Advisory</strong> — Guidance for collectors and institutions.</li>
-                <li><strong>Commissioned Artworks</strong> — Custom projects developed with artists.</li>
-                <li><strong>Artist Collaborations</strong> — Long-term and project-based partnerships.</li>
-                <li><strong>Design & Architectural Support</strong> — Art integrated into spatial planning.</li>
-            </ul>
+            <div class="services-list-container">
+                <dl class="services-list">
+
+                    <div class="service-item">
+                        <dt>Art Curation</dt>
+                        <dd>Curated selections for private and commercial spaces.</dd>
+                    </div>
+
+                    <div class="service-item">
+                        <dt>Art Advisory</dt>
+                        <dd>Guidance for collectors and institutions.</dd>
+                    </div>
+
+                    <div class="service-item">
+                        <dt>Commissioned Artworks</dt>
+                        <dd>Custom projects developed with artists.</dd>
+                    </div>
+
+                    <div class="service-item">
+                        <dt>Artist Collaborations</dt>
+                        <dd>Long-term and project-based partnerships.</dd>
+                    </div>
+
+                    <div class="service-item">
+                        <dt>Design & Architectural Support</dt>
+                        <dd>Art integrated into spatial planning.</dd>
+                    </div>
+
+                </dl>
+            </div>
+
         </div>
     </section>
 
     <footer>
-        Art Taara
+        <div class="container footer-layout">
+
+            <div class="footer-col">
+                <h3>Art Taara</h3>
+                <p>Bringing together India's heritage and contemporary art through thoughtful curation.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="artists.html">Our Artists</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <p>Instagram: <a href="https://www.instagram.com/arttaara/">@arttaara</a></p>
+                <p>Email: <a href="mailto:art.taara27@gmail.com">art.taara27@gmail.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="copyright-bar">
+            <p>Based in Delhi NCR and Chandigarh, India • Shipping worldwide | &copy; Art Taara 2025 — All rights
+                reserved.</p>
+        </div>
     </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navUL = document.getElementById('nav-ul');
+
+        hamburger.addEventListener('click', () => {
+            navUL.classList.toggle('show');
+        });
+    </script>
 
 </body>
 
